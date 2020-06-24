@@ -4,8 +4,8 @@ openshift.withCluster() {
   echo "begin build of " + env.APP_NAME
 }
 
-def template = "https://raw.githubusercontent.com/jgoldsmith613/java-base-march-security/master/signing-template.yaml"
-def quayURL = "example-quayecosystem-quay-quay.apps.cluster-nyc-ea98.nyc-ea98.example.opentlc.com"
+def template = "https://raw.githubusercontent.com/waynedovey/java-base-march-security/master/signing-template.yaml"
+def quayURL = "example-quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com"
 def repo = "security/${APP_NAME}"
 
 pipeline {
